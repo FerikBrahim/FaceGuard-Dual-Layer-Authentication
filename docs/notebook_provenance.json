@@ -1,0 +1,69 @@
+[
+  {
+    "source_filename": "watermark_vector_system_colab_fixed (1).ipynb",
+    "source_sha256": "27925701f343f5956b6c17b43a3b1f2c311f90ab7b43e0f63eb96746a81c994c",
+    "canonical_path": "notebooks/colab/watermarking/01_vector_watermark_baseline.ipynb",
+    "cells": 16,
+    "code_cells": 12,
+    "outputs_removed": 9,
+    "category": "Watermarking",
+    "status": "Canonical baseline supplied by the authors"
+  },
+  {
+    "source_filename": "watermark_vector_system_colab_fixed_v2 (2).ipynb",
+    "source_sha256": "9597ed91e5200b919d96edbcaa56e27b7cdc82dc48520b8c4524714ead79285e",
+    "canonical_path": "notebooks/colab/watermarking/02_vector_watermark_extended_attacks.ipynb",
+    "cells": 29,
+    "code_cells": 24,
+    "outputs_removed": 53,
+    "category": "Watermarking + attacks + fusion",
+    "status": "Latest canonical combined notebook; duplicate upload deduplicated"
+  },
+  {
+    "source_filename": "watermarkingLabelled_faces_images.ipynb",
+    "source_sha256": "2a815c0ed3331d244674083e8750236067d5c226e36d95a9c81248217bae5203",
+    "canonical_path": "notebooks/colab/watermarking/03_batch_watermarked_faces_legacy.ipynb",
+    "cells": 6,
+    "code_cells": 6,
+    "outputs_removed": 2664,
+    "category": "Legacy/alternative watermarking and DINOv2 Siamese experiment",
+    "status": "Archived for provenance; not the paper-default architecture"
+  },
+  {
+    "source_filename": "faceVerSiameseNet.ipynb",
+    "source_sha256": "d74d722cbf0c5dd98ee46ada8ea4fa112f51bb445642a8db0336f2b100f1d23f",
+    "canonical_path": "notebooks/colab/siamese/01_inceptionresnet_triplet_training.ipynb",
+    "cells": 2,
+    "code_cells": 2,
+    "outputs_removed": 41,
+    "category": "Siamese training and validation",
+    "status": "Primary network notebook aligned with the paper"
+  },
+  {
+    "source_filename": "vgg_zero_shot.ipynb",
+    "source_sha256": "3593dbcd70494d4f56a68006878a860aad9b91153324aba77c52d22e1c3d092b",
+    "canonical_path": "notebooks/colab/siamese/02_vggface2_zero_shot_baseline.ipynb",
+    "cells": 3,
+    "code_cells": 3,
+    "outputs_removed": 10,
+    "category": "Siamese baseline evaluation",
+    "status": "Baseline used to contextualize fine-tuning"
+  },
+  {
+    "source_filename": "deepfakeEvaluation(1).ipynb",
+    "source_sha256": "162fcf205dfb1a153566b761c2fdfd80ed34c3f8d7a52ac76c92026b872507a2",
+    "canonical_path": "notebooks/colab/evaluation/01_deepfake_statistical_evaluation.ipynb",
+    "cells": 14,
+    "code_cells": 14,
+    "outputs_removed": 18,
+    "category": "Deepfake evaluation, threshold calibration, and statistical analysis",
+    "status": "Research evaluation notebook with identity-aware safeguards"
+  },
+  {
+    "source_filename": "watermark_vector_system_colab_fixed_v2 (1).ipynb",
+    "source_sha256": "5d3adbc87d3caefe59e8c9bec220b6fa712a7d862617fd7d6f10f85954aea832",
+    "canonical_path": "notebooks/colab/watermarking/02_vector_watermark_extended_attacks.ipynb",
+    "category": "Watermarking + attacks + fusion",
+    "status": "Code-identical duplicate of the canonical v2 notebook"
+  }
+]
