@@ -52,7 +52,7 @@ deterministic 128-bit palmprint-derived watermark.
 
 ### 2. DT-CWT–SVD embedding
 
-Face images are processed at \(512\times512\). The luminance channel is decomposed
+Face images are processed at $$512 \times 512$$. The luminance channel is decomposed
 with a two-level Dual-Tree Complex Wavelet Transform, and SVD is applied to
 selected directional-subband blocks. Two maintained implementations are provided:
 
