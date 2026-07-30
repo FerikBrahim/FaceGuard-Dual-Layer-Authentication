@@ -1,0 +1,6 @@
+backbone: inception_resnet_v1
+pretrained: vggface2
+fine_tuning: false
+face_size: 160
+batch_size: 32
+threshold_selection: youden_j

@@ -1,0 +1,24 @@
+output_dir: outputs/default
+watermark:
+  length: 128
+  working_size: 512
+  margin: 36.0
+  block_size: 4
+  repetitions: 5
+  level: 2
+  orientation_index: 2
+  svd_index: 0
+  seed: 2026
+  ncc_threshold: 0.90
+  ber_threshold: 0.05
+siamese:
+  face_size: 160
+  embedding_dim: 512
+  min_face_probability: 0.90
+  threshold: null
+  margin: 0.8
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  batch_size: 16
+  epochs: 15
+  seed: 2026

@@ -1,0 +1,13 @@
+method: dtcwt_svd_qim
+working_size: 512
+watermark_bits: 128
+transform: dtcwt
+level: 2
+orientation_index: 2
+block_size: 8
+svd_index: 0
+delta: 4.0
+seed: 2026
+repetition: true
+ncc_threshold: 0.90
+ber_threshold: 0.05

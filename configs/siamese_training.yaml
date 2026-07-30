@@ -1,0 +1,13 @@
+backbone: inception_resnet_v1
+pretrained: vggface2
+face_size: 160
+embedding_dimension: 512
+batch_size: 16
+epochs: 15
+optimizer: AdamW
+learning_rate: 0.0001
+weight_decay: 0.0001
+triplet_margin: 0.8
+validation_fraction: 0.20
+seed: 2026
+threshold_selection: youden_j

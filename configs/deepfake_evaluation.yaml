@@ -1,0 +1,12 @@
+dataset_layout:
+  real: real/<identity>/*
+  fake: fake/<method>/<identity>/*
+reference_frames: 5
+identity_disjoint_calibration_fraction: 0.50
+metrics:
+  - APCER
+  - BPCER
+  - ACER
+  - attack_auc
+  - attack_eer
+seed: 2026
