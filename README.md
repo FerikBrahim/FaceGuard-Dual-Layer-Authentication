@@ -9,9 +9,9 @@ face image remains intact**. The framework combines a palmprint-derived binary
 watermark embedded into the face image with an InceptionResNetV1 Siamese verifier.
 A query is accepted only when both branches succeed:
 
-$$
+\[
 A_f = A_s \land A_w.
-$$
+\]
 
 | Siamese branch \(A_s\) | Watermark branch \(A_w\) | Outcome |
 |---:|---:|---|
@@ -46,13 +46,13 @@ The categorized notebooks are documented in
 
 ### 1. Palmprint CompCode watermark
 
-Six Gabor orientations $$0^\circ,30^\circ,60^\circ,90^\circ,120^\circ,150^\circ$$
+Six Gabor orientations \(0^\circ,30^\circ,60^\circ,90^\circ,120^\circ,150^\circ\)
 produce a winner-take-all orientation map. Block histograms are quantized into a
 deterministic 128-bit palmprint-derived watermark.
 
 ### 2. DT-CWT–SVD embedding
 
-Face images are processed at $$512 \times 512$$. The luminance channel is decomposed
+Face images are processed at \(512\times512\). The luminance channel is decomposed
 with a two-level Dual-Tree Complex Wavelet Transform, and SVD is applied to
 selected directional-subband blocks. Two maintained implementations are provided:
 
@@ -66,21 +66,13 @@ Never mix results from these implementations without reporting the exact config.
 ### 3. Siamese verification
 
 The primary network uses an InceptionResNetV1 encoder initialized from VGGFace2.
-Faces are detected/aligned and resized to $$160\times160\times3$$. A projection
+Faces are detected/aligned and resized to \(160\times160\times3\). A projection
 head generates L2-normalized 512-dimensional embeddings. Cosine triplet loss uses
 margin \(m=0.8\). Verification uses cosine similarity:
 
-$$
-s_s =
-\cos\!\left(
-f\!\left(R(I_r)\right),
-f\!\left(R(I_q)\right)
-\right),
-\qquad
-A_s =
-\mathbb{1}\!\left[s_s \geq \theta_s\right].
-$$
-
+\[
+s_s=\cos(f(R(I_r)),f(R(I_q))),\qquad A_s=\mathbb{1}[s_s\geq\theta_s].
+\]
 
 The threshold must be estimated from held-out validation identities. The code
 supports both standard preconstructed triplets and genuine batch semi-hard

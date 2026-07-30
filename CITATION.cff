@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the FaceGuard manuscript."
+title: "FaceGuard: Dual-Layer Face Authentication"
+type: software
+authors:
+  - family-names: "Guia"
+    given-names: "S.-S."
+  - family-names: "Ferik"
+    given-names: "B."
+  - family-names: "Medileh"
+    given-names: "S."
+  - family-names: "Kahla"
+    given-names: "M.-E."
+  - family-names: "Laouid"
+    given-names: "A."
+  - family-names: "Hammoudeh"
+    given-names: "M."
+version: 0.2.0
+date-released: 2026-07-29
+preferred-citation:
+  type: article
+  title: "Dual-layer face authentication against spoofing and deepfakes using palmprint watermarking and Siamese verification"
+  year: 2026
+  authors:
+    - family-names: "Guia"
+      given-names: "S.-S."
+    - family-names: "Ferik"
+      given-names: "B."
+    - family-names: "Medileh"
+      given-names: "S."
+    - family-names: "Kahla"
+      given-names: "M.-E."
+    - family-names: "Laouid"
+      given-names: "A."
+    - family-names: "Hammoudeh"
+      given-names: "M."

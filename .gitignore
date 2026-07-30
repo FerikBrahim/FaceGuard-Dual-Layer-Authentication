@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Models and data
+models/*.pth
+models/*.pt
+models/*.ckpt
+data/
+outputs/*
+!outputs/.gitkeep
+# Biometric sample images are local by default
+sample_images/**/*.png
+sample_images/**/*.jpg
+sample_images/**/*.jpeg
+sample_images/**/*.bmp
+sample_images/**/*.tif
+sample_images/**/*.tiff
+sample_images/**/*.webp
+!sample_images/**/.gitkeep
+!sample_images/README.md
+
+# Generated secrets/keys
+*.env
+.env
+*watermark_key*.json
+*watermark_128*.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
