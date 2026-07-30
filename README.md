@@ -202,6 +202,38 @@ The relative path used by the scripts is:
 models/face_verification_model.pth
 ```
 
+### Download the trained checkpoint
+
+The trained Siamese checkpoint is hosted on Google Drive because it is too large for a standard GitHub browser upload:
+
+[Download `face_verification_model.pth` from Google Drive](https://drive.google.com/file/d/1WwfZ-s6iovePSyCcL-ubx_gPLSdP61Bf/view?usp=sharing)
+
+After downloading the file, place it in the repository at:
+
+```text
+models/face_verification_model.pth
+```
+
+The checkpoint can also be downloaded automatically with `gdown`:
+
+```bash
+python -m pip install gdown
+mkdir -p models
+gdown --fuzzy "https://drive.google.com/file/d/1WwfZ-s6iovePSyCcL-ubx_gPLSdP61Bf/view?usp=sharing" \
+  -O models/face_verification_model.pth
+```
+
+In Google Colab, run:
+
+```python
+!pip -q install gdown
+!mkdir -p models
+!gdown --fuzzy "https://drive.google.com/file/d/1WwfZ-s6iovePSyCcL-ubx_gPLSdP61Bf/view?usp=sharing" \
+  -O models/face_verification_model.pth
+```
+
+The Google Drive sharing permission must allow anyone with the link to view the file. Verify the download before running evaluation scripts.
+
 ### Saving the checkpoint during training
 
 ```python
