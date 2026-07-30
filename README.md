@@ -70,9 +70,17 @@ Faces are detected/aligned and resized to \(160\times160\times3\). A projection
 head generates L2-normalized 512-dimensional embeddings. Cosine triplet loss uses
 margin \(m=0.8\). Verification uses cosine similarity:
 
-\[
-s_s=\cos(f(R(I_r)),f(R(I_q))),\qquad A_s=\mathbb{1}[s_s\geq\theta_s].
-\]
+$$
+s_s =
+\cos\!\left(
+f\!\left(R(I_r)\right),
+f\!\left(R(I_q)\right)
+\right),
+\qquad
+A_s =
+\mathbb{1}\!\left[s_s \geq \theta_s\right].
+$$
+
 
 The threshold must be estimated from held-out validation identities. The code
 supports both standard preconstructed triplets and genuine batch semi-hard
