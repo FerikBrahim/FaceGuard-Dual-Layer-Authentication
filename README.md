@@ -46,7 +46,7 @@ The categorized notebooks are documented in
 
 ### 1. Palmprint CompCode watermark
 
-Six Gabor orientations \(0^\circ,30^\circ,60^\circ,90^\circ,120^\circ,150^\circ\)
+Six Gabor orientations $$0^\circ,30^\circ,60^\circ,90^\circ,120^\circ,150^\circ$$
 produce a winner-take-all orientation map. Block histograms are quantized into a
 deterministic 128-bit palmprint-derived watermark.
 
@@ -66,7 +66,7 @@ Never mix results from these implementations without reporting the exact config.
 ### 3. Siamese verification
 
 The primary network uses an InceptionResNetV1 encoder initialized from VGGFace2.
-Faces are detected/aligned and resized to \(160\times160\times3\). A projection
+Faces are detected/aligned and resized to $$160\times160\times3$$. A projection
 head generates L2-normalized 512-dimensional embeddings. Cosine triplet loss uses
 margin \(m=0.8\). Verification uses cosine similarity:
 
