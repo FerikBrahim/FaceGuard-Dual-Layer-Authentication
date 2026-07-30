@@ -9,9 +9,9 @@ face image remains intact**. The framework combines a palmprint-derived binary
 watermark embedded into the face image with an InceptionResNetV1 Siamese verifier.
 A query is accepted only when both branches succeed:
 
-\[
+$$
 A_f = A_s \land A_w.
-\]
+$$
 
 | Siamese branch \(A_s\) | Watermark branch \(A_w\) | Outcome |
 |---:|---:|---|
